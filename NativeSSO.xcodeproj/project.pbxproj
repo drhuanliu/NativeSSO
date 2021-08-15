@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6336CE426C87636004CE027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6336CE326C87636004CE027 /* AppDelegate.swift */; };
+		A6336CE626C87636004CE027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6336CE526C87636004CE027 /* ViewController.swift */; };
+		A6336CE826C87639004CE027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6336CE726C87639004CE027 /* Assets.xcassets */; };
+		A6336CEB26C87639004CE027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6336CE926C87639004CE027 /* Main.storyboard */; };
 		A6C441AF26B3B7240011C137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C441AE26B3B7240011C137 /* AppDelegate.swift */; };
 		A6C441B126B3B7240011C137 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C441B026B3B7240011C137 /* SceneDelegate.swift */; };
 		A6C441B326B3B7240011C137 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C441B226B3B7240011C137 /* ViewController.swift */; };
 		A6C441B626B3B7240011C137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C441B426B3B7240011C137 /* Main.storyboard */; };
 		A6C441B826B3B7280011C137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C441B726B3B7280011C137 /* Assets.xcassets */; };
 		A6C441BB26B3B7280011C137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C441B926B3B7280011C137 /* LaunchScreen.storyboard */; };
+		CF3F696C29385FF57C35A455 /* libPods-NativeSSO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1333EC1EA500423C06008675 /* libPods-NativeSSO.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1333EC1EA500423C06008675 /* libPods-NativeSSO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeSSO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD0089CAA00F0D4124C4121 /* Pods-NativeSSO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSSO.debug.xcconfig"; path = "Target Support Files/Pods-NativeSSO/Pods-NativeSSO.debug.xcconfig"; sourceTree = "<group>"; };
+		6DC3D999A8C698CA97C71C98 /* Pods-NativeSSO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSSO.release.xcconfig"; path = "Target Support Files/Pods-NativeSSO/Pods-NativeSSO.release.xcconfig"; sourceTree = "<group>"; };
+		A6336CE126C87636004CE027 /* NativeSSOMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeSSOMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6336CE326C87636004CE027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6336CE526C87636004CE027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6336CE726C87639004CE027 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6336CEA26C87639004CE027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6336CEC26C87639004CE027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6336CED26C87639004CE027 /* NativeSSOMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NativeSSOMac.entitlements; sourceTree = "<group>"; };
+		A6C37CAD26BF9BFA009088DE /* NativeSSO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NativeSSO.entitlements; sourceTree = "<group>"; };
 		A6C441AB26B3B7240011C137 /* NativeSSO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeSSO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C441AE26B3B7240011C137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6C441B026B3B7240011C137 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,21 +43,53 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A6C441A826B3B7240011C137 /* Frameworks */ = {
+		A6336CDE26C87636004CE027 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6C441A826B3B7240011C137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF3F696C29385FF57C35A455 /* libPods-NativeSSO.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37A2B63583F877495D9B4105 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1333EC1EA500423C06008675 /* libPods-NativeSSO.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6336CE226C87636004CE027 /* NativeSSOMac */ = {
+			isa = PBXGroup;
+			children = (
+				A6336CE326C87636004CE027 /* AppDelegate.swift */,
+				A6336CE526C87636004CE027 /* ViewController.swift */,
+				A6336CE726C87639004CE027 /* Assets.xcassets */,
+				A6336CE926C87639004CE027 /* Main.storyboard */,
+				A6336CEC26C87639004CE027 /* Info.plist */,
+				A6336CED26C87639004CE027 /* NativeSSOMac.entitlements */,
+			);
+			path = NativeSSOMac;
+			sourceTree = "<group>";
+		};
 		A6C441A226B3B7240011C137 = {
 			isa = PBXGroup;
 			children = (
 				A6C441AD26B3B7240011C137 /* NativeSSO */,
+				A6336CE226C87636004CE027 /* NativeSSOMac */,
 				A6C441AC26B3B7240011C137 /* Products */,
+				D013B6B371DDCF0F525BEF12 /* Pods */,
+				37A2B63583F877495D9B4105 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				A6C441AB26B3B7240011C137 /* NativeSSO.app */,
+				A6336CE126C87636004CE027 /* NativeSSOMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +105,7 @@
 		A6C441AD26B3B7240011C137 /* NativeSSO */ = {
 			isa = PBXGroup;
 			children = (
+				A6C37CAD26BF9BFA009088DE /* NativeSSO.entitlements */,
 				A6C441AE26B3B7240011C137 /* AppDelegate.swift */,
 				A6C441B026B3B7240011C137 /* SceneDelegate.swift */,
 				A6C441B226B3B7240011C137 /* ViewController.swift */,
@@ -67,13 +117,40 @@
 			path = NativeSSO;
 			sourceTree = "<group>";
 		};
+		D013B6B371DDCF0F525BEF12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FD0089CAA00F0D4124C4121 /* Pods-NativeSSO.debug.xcconfig */,
+				6DC3D999A8C698CA97C71C98 /* Pods-NativeSSO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A6336CE026C87636004CE027 /* NativeSSOMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6336CF026C87639004CE027 /* Build configuration list for PBXNativeTarget "NativeSSOMac" */;
+			buildPhases = (
+				A6336CDD26C87636004CE027 /* Sources */,
+				A6336CDE26C87636004CE027 /* Frameworks */,
+				A6336CDF26C87636004CE027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NativeSSOMac;
+			productName = NativeSSOMac;
+			productReference = A6336CE126C87636004CE027 /* NativeSSOMac.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A6C441AA26B3B7240011C137 /* NativeSSO */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6C441BF26B3B7280011C137 /* Build configuration list for PBXNativeTarget "NativeSSO" */;
 			buildPhases = (
+				2CE30F052C1D7E76494E857A /* [CP] Check Pods Manifest.lock */,
 				A6C441A726B3B7240011C137 /* Sources */,
 				A6C441A826B3B7240011C137 /* Frameworks */,
 				A6C441A926B3B7240011C137 /* Resources */,
@@ -96,6 +173,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					A6336CE026C87636004CE027 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					A6C441AA26B3B7240011C137 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -115,11 +195,21 @@
 			projectRoot = "";
 			targets = (
 				A6C441AA26B3B7240011C137 /* NativeSSO */,
+				A6336CE026C87636004CE027 /* NativeSSOMac */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A6336CDF26C87636004CE027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6336CE826C87639004CE027 /* Assets.xcassets in Resources */,
+				A6336CEB26C87639004CE027 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6C441A926B3B7240011C137 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -132,7 +222,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CE30F052C1D7E76494E857A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NativeSSO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		A6336CDD26C87636004CE027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6336CE626C87636004CE027 /* ViewController.swift in Sources */,
+				A6336CE426C87636004CE027 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A6C441A726B3B7240011C137 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +270,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A6336CE926C87639004CE027 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6336CEA26C87639004CE027 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		A6C441B426B3B7240011C137 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -165,6 +297,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A6336CEE26C87639004CE027 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NativeSSOMac/NativeSSOMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NativeSSOMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atko.NativeSSOMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A6336CEF26C87639004CE027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NativeSSOMac/NativeSSOMac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NativeSSOMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atko.NativeSSOMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		A6C441BD26B3B7280011C137 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -283,11 +457,15 @@
 		};
 		A6C441C026B3B7280011C137 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD0089CAA00F0D4124C4121 /* Pods-NativeSSO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NativeSSO/NativeSSO.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRFXYU2768;
 				INFOPLIST_FILE = NativeSSO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +479,15 @@
 		};
 		A6C441C126B3B7280011C137 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC3D999A8C698CA97C71C98 /* Pods-NativeSSO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NativeSSO/NativeSSO.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRFXYU2768;
 				INFOPLIST_FILE = NativeSSO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +502,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A6336CF026C87639004CE027 /* Build configuration list for PBXNativeTarget "NativeSSOMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6336CEE26C87639004CE027 /* Debug */,
+				A6336CEF26C87639004CE027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A6C441A626B3B7240011C137 /* Build configuration list for PBXProject "NativeSSO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

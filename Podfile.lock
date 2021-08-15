@@ -1,0 +1,24 @@
+PODS:
+  - OktaOidc (3.7.0):
+    - OktaOidc/AppAuth (= 3.7.0)
+    - OktaOidc/Okta (= 3.7.0)
+  - OktaOidc/AppAuth (3.7.0)
+  - OktaOidc/Okta (3.7.0):
+    - OktaOidc/AppAuth
+    - OktaOidc/Okta/Classes (= 3.7.0)
+  - OktaOidc/Okta/Classes (3.7.0):
+    - OktaOidc/AppAuth
+
+DEPENDENCIES:
+  - OktaOidc
+
+SPEC REPOS:
+  trunk:
+    - OktaOidc
+
+SPEC CHECKSUMS:
+  OktaOidc: 646773483d04de414575fd7845345fb151c0c388
+
+PODFILE CHECKSUM: 351cb81e36486ae7dd97305bacaedb8f8e3fbfce
+
+COCOAPODS: 1.10.2
