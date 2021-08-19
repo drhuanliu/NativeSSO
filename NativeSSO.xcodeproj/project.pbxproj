@@ -11,6 +11,8 @@
 		A6336CE626C87636004CE027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6336CE526C87636004CE027 /* ViewController.swift */; };
 		A6336CE826C87639004CE027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6336CE726C87639004CE027 /* Assets.xcassets */; };
 		A6336CEB26C87639004CE027 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6336CE926C87639004CE027 /* Main.storyboard */; };
+		A65FA2DD26CC93A10009727F /* SignInHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65FA2DC26CC93A10009727F /* SignInHelper.swift */; };
+		A65FA2DE26CC93A10009727F /* SignInHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65FA2DC26CC93A10009727F /* SignInHelper.swift */; };
 		A6C441AF26B3B7240011C137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C441AE26B3B7240011C137 /* AppDelegate.swift */; };
 		A6C441B126B3B7240011C137 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C441B026B3B7240011C137 /* SceneDelegate.swift */; };
 		A6C441B326B3B7240011C137 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C441B226B3B7240011C137 /* ViewController.swift */; };
@@ -31,6 +33,7 @@
 		A6336CEA26C87639004CE027 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6336CEC26C87639004CE027 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6336CED26C87639004CE027 /* NativeSSOMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NativeSSOMac.entitlements; sourceTree = "<group>"; };
+		A65FA2DC26CC93A10009727F /* SignInHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHelper.swift; sourceTree = "<group>"; };
 		A6C37CAD26BF9BFA009088DE /* NativeSSO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NativeSSO.entitlements; sourceTree = "<group>"; };
 		A6C441AB26B3B7240011C137 /* NativeSSO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeSSO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C441AE26B3B7240011C137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 				A6C441AE26B3B7240011C137 /* AppDelegate.swift */,
 				A6C441B026B3B7240011C137 /* SceneDelegate.swift */,
 				A6C441B226B3B7240011C137 /* ViewController.swift */,
+				A65FA2DC26CC93A10009727F /* SignInHelper.swift */,
 				A6C441B426B3B7240011C137 /* Main.storyboard */,
 				A6C441B726B3B7280011C137 /* Assets.xcassets */,
 				A6C441B926B3B7280011C137 /* LaunchScreen.storyboard */,
@@ -254,6 +258,7 @@
 			files = (
 				A6336CE626C87636004CE027 /* ViewController.swift in Sources */,
 				A6336CE426C87636004CE027 /* AppDelegate.swift in Sources */,
+				A65FA2DE26CC93A10009727F /* SignInHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6C441B326B3B7240011C137 /* ViewController.swift in Sources */,
+				A65FA2DD26CC93A10009727F /* SignInHelper.swift in Sources */,
 				A6C441AF26B3B7240011C137 /* AppDelegate.swift in Sources */,
 				A6C441B126B3B7240011C137 /* SceneDelegate.swift in Sources */,
 			);
@@ -303,15 +309,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NativeSSOMac/NativeSSOMac.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 96XG5CYU7R;
 				INFOPLIST_FILE = NativeSSOMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.atko.NativeSSOMac;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atko.NativeSSOMacbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -324,15 +332,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NativeSSOMac/NativeSSOMac.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 96XG5CYU7R;
 				INFOPLIST_FILE = NativeSSOMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.atko.NativeSSOMac;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atko.NativeSSOMacbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -390,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -445,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -463,14 +473,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NativeSSO/NativeSSO.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CRFXYU2768;
+				DEVELOPMENT_TEAM = 96XG5CYU7R;
 				INFOPLIST_FILE = NativeSSO/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.atko.NativeSSO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atko.NativeSSOiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,14 +495,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NativeSSO/NativeSSO.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CRFXYU2768;
+				DEVELOPMENT_TEAM = 96XG5CYU7R;
 				INFOPLIST_FILE = NativeSSO/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.atko.NativeSSO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atko.NativeSSOiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
