@@ -5,7 +5,6 @@
 //  Created by Huan Liu on 8/17/21.
 //
 
-import UIKit
 import OktaOidc
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1F6EE66CB25F7A24A728FC /* libPods-NativeSSOMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D43E2B18572757EAEDE120 /* libPods-NativeSSOMac.a */; };
 		A6336CE426C87636004CE027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6336CE326C87636004CE027 /* AppDelegate.swift */; };
 		A6336CE626C87636004CE027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6336CE526C87636004CE027 /* ViewController.swift */; };
 		A6336CE826C87639004CE027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6336CE726C87639004CE027 /* Assets.xcassets */; };
@@ -24,8 +25,10 @@
 
 /* Begin PBXFileReference section */
 		1333EC1EA500423C06008675 /* libPods-NativeSSO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeSSO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D43E2B18572757EAEDE120 /* libPods-NativeSSOMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeSSOMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD0089CAA00F0D4124C4121 /* Pods-NativeSSO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSSO.debug.xcconfig"; path = "Target Support Files/Pods-NativeSSO/Pods-NativeSSO.debug.xcconfig"; sourceTree = "<group>"; };
 		6DC3D999A8C698CA97C71C98 /* Pods-NativeSSO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSSO.release.xcconfig"; path = "Target Support Files/Pods-NativeSSO/Pods-NativeSSO.release.xcconfig"; sourceTree = "<group>"; };
+		76DF45E5408D701B5CAECF04 /* Pods-NativeSSOMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSSOMac.release.xcconfig"; path = "Target Support Files/Pods-NativeSSOMac/Pods-NativeSSOMac.release.xcconfig"; sourceTree = "<group>"; };
 		A6336CE126C87636004CE027 /* NativeSSOMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeSSOMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6336CE326C87636004CE027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6336CE526C87636004CE027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		A6C441B726B3B7280011C137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C441BA26B3B7280011C137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6C441BC26B3B7280011C137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAA16D2EC902F22885C399A8 /* Pods-NativeSSOMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSSOMac.debug.xcconfig"; path = "Target Support Files/Pods-NativeSSOMac/Pods-NativeSSOMac.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E1F6EE66CB25F7A24A728FC /* libPods-NativeSSOMac.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				1333EC1EA500423C06008675 /* libPods-NativeSSO.a */,
+				56D43E2B18572757EAEDE120 /* libPods-NativeSSOMac.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +132,8 @@
 			children = (
 				5FD0089CAA00F0D4124C4121 /* Pods-NativeSSO.debug.xcconfig */,
 				6DC3D999A8C698CA97C71C98 /* Pods-NativeSSO.release.xcconfig */,
+				AAA16D2EC902F22885C399A8 /* Pods-NativeSSOMac.debug.xcconfig */,
+				76DF45E5408D701B5CAECF04 /* Pods-NativeSSOMac.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -137,6 +145,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6336CF026C87639004CE027 /* Build configuration list for PBXNativeTarget "NativeSSOMac" */;
 			buildPhases = (
+				07E02C4810E0694BA483D425 /* [CP] Check Pods Manifest.lock */,
 				A6336CDD26C87636004CE027 /* Sources */,
 				A6336CDE26C87636004CE027 /* Frameworks */,
 				A6336CDF26C87636004CE027 /* Resources */,
@@ -227,6 +236,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		07E02C4810E0694BA483D425 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NativeSSOMac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2CE30F052C1D7E76494E857A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,6 +336,7 @@
 /* Begin XCBuildConfiguration section */
 		A6336CEE26C87639004CE027 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA16D2EC902F22885C399A8 /* Pods-NativeSSOMac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +353,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.atko.NativeSSOMacbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -328,6 +361,7 @@
 		};
 		A6336CEF26C87639004CE027 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76DF45E5408D701B5CAECF04 /* Pods-NativeSSOMac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -344,6 +378,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.atko.NativeSSOMacbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
