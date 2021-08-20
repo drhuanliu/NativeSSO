@@ -67,6 +67,20 @@ class ViewController: NSViewController {
     }
     
     @IBAction func logout(_ sender: Any) {
+        if let sm = SignInHelper.stateManager {
+            oktaOidc.signOutOfOkta(authStateManager: sm) { error in
+                if let error = error {
+                    // Handle error
+                    return
+                }
+                
+                do {
+                    try SignInHelper.stateManager?.removeFromSecureStorage()
+                }
+                catch {}
+            }
+        }
+        SignInHelper.removeDeviceSecret()
     }
 }
 

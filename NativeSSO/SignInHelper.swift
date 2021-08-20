@@ -46,7 +46,7 @@ class SignInHelper: NSObject {
                                                              "actor_token_type" : "urn:x-oath:params:oauth:token-type:device-secret",
                                                              "subject_token" : idToken!,
                                                              "subject_token_type" : "urn:ietf:params:oauth:token-type:id_token",
-                                                             "audience" : "api://default"])
+                                                             "audience" : "api://default"]) 
         // perform token exchange
         OKTAuthorizationService.perform(request, delegate: nil) { tokenResponse, error in
             if error != nil {
@@ -142,6 +142,8 @@ class SignInHelper: NSObject {
     static func removeDeviceSecret() {
         let query: [String: Any] = [
             (kSecClass as String): kSecClassGenericPassword,  // only Password items can use iCloud keychain
+            (kSecAttrSynchronizable as String): kCFBooleanTrue!,  // allow iCloud
+            (kSecAttrAccessGroup as String): keychainGroup,   // multiple apps can share through this group
             (kSecAttrLabel as String): keychainTag]      // tag to make it easy to search
 
         let status = SecItemDelete(query as CFDictionary)
