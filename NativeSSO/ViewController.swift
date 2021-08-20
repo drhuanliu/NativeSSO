@@ -63,8 +63,12 @@ class ViewController: UIViewController {
 
     }
 
+    func iosOidcBrowserLogin() {
+        oktaOidc.signInWithBrowser(from: self, callback: SignInHelper.oktaOidcCallback)
+    }
+    
     @IBAction func login(_ sender: Any) {
-        SignInHelper.doLogin(oktaOidc: oktaOidc, vc: self)
+        SignInHelper.doLogin(oktaOidc: oktaOidc, browserOidcLogin: iosOidcBrowserLogin )
         
         displayUsername()
     }

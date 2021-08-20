@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E1F6EE66CB25F7A24A728FC /* libPods-NativeSSOMac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D43E2B18572757EAEDE120 /* libPods-NativeSSOMac.a */; };
+		2E1430959FA87ADBECE83247 /* Pods_Mobile_NativeSSO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39767DC01C715F4347CA1630 /* Pods_Mobile_NativeSSO.framework */; };
+		8372AE5436B69D7993D2E4FE /* Pods_Mac_NativeSSOMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EF7B37EF271C3064F54EF3 /* Pods_Mac_NativeSSOMac.framework */; };
 		A6336CE426C87636004CE027 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6336CE326C87636004CE027 /* AppDelegate.swift */; };
 		A6336CE626C87636004CE027 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6336CE526C87636004CE027 /* ViewController.swift */; };
 		A6336CE826C87639004CE027 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6336CE726C87639004CE027 /* Assets.xcassets */; };
@@ -20,15 +21,17 @@
 		A6C441B626B3B7240011C137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C441B426B3B7240011C137 /* Main.storyboard */; };
 		A6C441B826B3B7280011C137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C441B726B3B7280011C137 /* Assets.xcassets */; };
 		A6C441BB26B3B7280011C137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C441B926B3B7280011C137 /* LaunchScreen.storyboard */; };
-		CF3F696C29385FF57C35A455 /* libPods-NativeSSO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1333EC1EA500423C06008675 /* libPods-NativeSSO.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1333EC1EA500423C06008675 /* libPods-NativeSSO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeSSO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		56D43E2B18572757EAEDE120 /* libPods-NativeSSOMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeSSOMac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		013110FB6AB2458A699D8AB6 /* Pods-Mobile-NativeSSO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile-NativeSSO.release.xcconfig"; path = "Target Support Files/Pods-Mobile-NativeSSO/Pods-Mobile-NativeSSO.release.xcconfig"; sourceTree = "<group>"; };
+		39767DC01C715F4347CA1630 /* Pods_Mobile_NativeSSO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_NativeSSO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD0089CAA00F0D4124C4121 /* Pods-NativeSSO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSSO.debug.xcconfig"; path = "Target Support Files/Pods-NativeSSO/Pods-NativeSSO.debug.xcconfig"; sourceTree = "<group>"; };
 		6DC3D999A8C698CA97C71C98 /* Pods-NativeSSO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSSO.release.xcconfig"; path = "Target Support Files/Pods-NativeSSO/Pods-NativeSSO.release.xcconfig"; sourceTree = "<group>"; };
 		76DF45E5408D701B5CAECF04 /* Pods-NativeSSOMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSSOMac.release.xcconfig"; path = "Target Support Files/Pods-NativeSSOMac/Pods-NativeSSOMac.release.xcconfig"; sourceTree = "<group>"; };
+		7799865A634A385F65450834 /* Pods-Mac-NativeSSOMac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mac-NativeSSOMac.release.xcconfig"; path = "Target Support Files/Pods-Mac-NativeSSOMac/Pods-Mac-NativeSSOMac.release.xcconfig"; sourceTree = "<group>"; };
+		79A00AEE8D0FF293F3EB89FC /* Pods-Mobile-NativeSSO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile-NativeSSO.debug.xcconfig"; path = "Target Support Files/Pods-Mobile-NativeSSO/Pods-Mobile-NativeSSO.debug.xcconfig"; sourceTree = "<group>"; };
+		A0EF7B37EF271C3064F54EF3 /* Pods_Mac_NativeSSOMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mac_NativeSSOMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6336CE126C87636004CE027 /* NativeSSOMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeSSOMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6336CE326C87636004CE027 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6336CE526C87636004CE027 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		A6C441BA26B3B7280011C137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6C441BC26B3B7280011C137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAA16D2EC902F22885C399A8 /* Pods-NativeSSOMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeSSOMac.debug.xcconfig"; path = "Target Support Files/Pods-NativeSSOMac/Pods-NativeSSOMac.debug.xcconfig"; sourceTree = "<group>"; };
+		C63F0B9437ACC90D1BF28216 /* Pods-Mac-NativeSSOMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mac-NativeSSOMac.debug.xcconfig"; path = "Target Support Files/Pods-Mac-NativeSSOMac/Pods-Mac-NativeSSOMac.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E1F6EE66CB25F7A24A728FC /* libPods-NativeSSOMac.a in Frameworks */,
+				8372AE5436B69D7993D2E4FE /* Pods_Mac_NativeSSOMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF3F696C29385FF57C35A455 /* libPods-NativeSSO.a in Frameworks */,
+				2E1430959FA87ADBECE83247 /* Pods_Mobile_NativeSSO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +76,8 @@
 		37A2B63583F877495D9B4105 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1333EC1EA500423C06008675 /* libPods-NativeSSO.a */,
-				56D43E2B18572757EAEDE120 /* libPods-NativeSSOMac.a */,
+				A0EF7B37EF271C3064F54EF3 /* Pods_Mac_NativeSSOMac.framework */,
+				39767DC01C715F4347CA1630 /* Pods_Mobile_NativeSSO.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +138,10 @@
 				6DC3D999A8C698CA97C71C98 /* Pods-NativeSSO.release.xcconfig */,
 				AAA16D2EC902F22885C399A8 /* Pods-NativeSSOMac.debug.xcconfig */,
 				76DF45E5408D701B5CAECF04 /* Pods-NativeSSOMac.release.xcconfig */,
+				C63F0B9437ACC90D1BF28216 /* Pods-Mac-NativeSSOMac.debug.xcconfig */,
+				7799865A634A385F65450834 /* Pods-Mac-NativeSSOMac.release.xcconfig */,
+				79A00AEE8D0FF293F3EB89FC /* Pods-Mobile-NativeSSO.debug.xcconfig */,
+				013110FB6AB2458A699D8AB6 /* Pods-Mobile-NativeSSO.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -149,6 +157,7 @@
 				A6336CDD26C87636004CE027 /* Sources */,
 				A6336CDE26C87636004CE027 /* Frameworks */,
 				A6336CDF26C87636004CE027 /* Resources */,
+				622CCBD028D8C968E0120434 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +176,7 @@
 				A6C441A726B3B7240011C137 /* Sources */,
 				A6C441A826B3B7240011C137 /* Frameworks */,
 				A6C441A926B3B7240011C137 /* Resources */,
+				D2EE40E577E03D5D1673B5EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,7 +261,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NativeSSOMac-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Mac-NativeSSOMac-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -273,11 +283,45 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NativeSSO-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Mobile-NativeSSO-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		622CCBD028D8C968E0120434 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mac-NativeSSOMac/Pods-Mac-NativeSSOMac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mac-NativeSSOMac/Pods-Mac-NativeSSOMac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mac-NativeSSOMac/Pods-Mac-NativeSSOMac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2EE40E577E03D5D1673B5EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mobile-NativeSSO/Pods-Mobile-NativeSSO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mobile-NativeSSO/Pods-Mobile-NativeSSO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mobile-NativeSSO/Pods-Mobile-NativeSSO-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -336,7 +380,7 @@
 /* Begin XCBuildConfiguration section */
 		A6336CEE26C87639004CE027 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAA16D2EC902F22885C399A8 /* Pods-NativeSSOMac.debug.xcconfig */;
+			baseConfigurationReference = C63F0B9437ACC90D1BF28216 /* Pods-Mac-NativeSSOMac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -361,7 +405,7 @@
 		};
 		A6336CEF26C87639004CE027 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76DF45E5408D701B5CAECF04 /* Pods-NativeSSOMac.release.xcconfig */;
+			baseConfigurationReference = 7799865A634A385F65450834 /* Pods-Mac-NativeSSOMac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -502,7 +546,7 @@
 		};
 		A6C441C026B3B7280011C137 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FD0089CAA00F0D4124C4121 /* Pods-NativeSSO.debug.xcconfig */;
+			baseConfigurationReference = 79A00AEE8D0FF293F3EB89FC /* Pods-Mobile-NativeSSO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -524,7 +568,7 @@
 		};
 		A6C441C126B3B7280011C137 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DC3D999A8C698CA97C71C98 /* Pods-NativeSSO.release.xcconfig */;
+			baseConfigurationReference = 013110FB6AB2458A699D8AB6 /* Pods-Mobile-NativeSSO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

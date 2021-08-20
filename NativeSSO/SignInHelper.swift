@@ -18,22 +18,22 @@ class SignInHelper: NSObject {
     static let keychainTag = "device_secret"
     static var stateManager : OktaOidcStateManager?
     
-    static func doLogin(oktaOidc: OktaOidc, vc: UIViewController) {
+    static func doLogin(oktaOidc: OktaOidc, browserOidcLogin: @escaping ()->()) {
         // we are here when we are not logged in
         // first try to find device_secret and exchange a token
         let (idToken, deviceSecret) = queryForDeviceSecret()
         if idToken == nil {
-            doOidcLogin(oktaOidc: oktaOidc, vc: vc)
+            browserOidcLogin()
             return
         }
         
         // try exchange for token
-        let configuration = OIDServiceConfiguration.init(
+        let configuration = OKTServiceConfiguration.init(
             authorizationEndpoint: URL(string: authorizeUrl)!,
             tokenEndpoint: URL(string: tokenUrl)!
         )
 
-        let request = OIDTokenRequest(configuration: configuration,
+        let request = OKTTokenRequest(configuration: configuration,
                                       grantType: "urn:ietf:params:oauth:grant-type:token-exchange",
                                       authorizationCode: nil,
                                       redirectURL: nil,
@@ -48,19 +48,19 @@ class SignInHelper: NSObject {
                                                              "subject_token_type" : "urn:ietf:params:oauth:token-type:id_token",
                                                              "audience" : "api://default"])
         // perform token exchange
-        OIDAuthorizationService.perform(request) { tokenResponse, error in
+        OKTAuthorizationService.perform(request, delegate: nil) { tokenResponse, error in
             if error != nil {
                 print(error!)
                 // could not exchange DeviceToken, fall back to regular login
-                doOidcLogin(oktaOidc: oktaOidc, vc: vc)
+                browserOidcLogin()
                 return
             }
             
             // successfully exchanged token, try to save
             // construct AuthState from a fake request, because we did not make a real OIDC request to begin with
-            let authState = OIDAuthState(authorizationResponse:
-                                         OIDAuthorizationResponse(request:
-                                                                    OIDAuthorizationRequest(configuration: configuration,
+            let authState = OKTAuthState(authorizationResponse:
+                                         OKTAuthorizationResponse(request:
+                                                                    OKTAuthorizationRequest(configuration: configuration,
                                                                                             clientId: oktaOidc.configuration.clientId,
                                                                                             scopes: ["openid"],
                                                                                             redirectURL: URL(string: "any")!,
@@ -75,30 +75,29 @@ class SignInHelper: NSObject {
             stateManager!.writeToSecureStorage()
         }
     }
-    
-    static func doOidcLogin(oktaOidc: OktaOidc, vc: UIViewController) {
-        oktaOidc.signInWithBrowser(from: vc) { stateManager, error in
-            if let error = error {
-                // Error
-                return
-            }
-            
-            self.stateManager = stateManager
-            
-            // #1 Store instance of stateManager into the local iOS keychain
-            stateManager!.writeToSecureStorage()
 
-            // #2 Use tokens
-            print(stateManager!.accessToken!)
-            print(stateManager!.idToken!)
-            print(stateManager!.refreshToken!)
-            print(stateManager!.authState.lastTokenResponse!.additionalParameters!["device_secret"]!)
-
-            // persist in iCloud keychain
-            // can update key, but it is easier to understand to just remove and add
-            removeDeviceSecret()
-            addDeviceSecret(idToken: stateManager!.idToken!, deviceSecret: stateManager!.authState.lastTokenResponse!.additionalParameters!["device_secret"]! as! String)
+    // callback from Browser login to save the state as necessary
+    static let oktaOidcCallback: (OktaOidcStateManager?, Error?) -> () = { stateManager, error in
+        if let error = error {
+            // Error
+            return
         }
+        
+        SignInHelper.stateManager = stateManager
+        
+        // #1 Store instance of stateManager into the local iOS keychain
+        stateManager!.writeToSecureStorage()
+
+        // #2 Use tokens
+        print(stateManager!.accessToken!)
+        print(stateManager!.idToken!)
+        print(stateManager!.refreshToken!)
+        print(stateManager!.authState.lastTokenResponse!.additionalParameters!["device_secret"]!)
+
+        // persist in iCloud keychain
+        // can update key, but it is easier to understand to just remove and add
+        removeDeviceSecret()
+        addDeviceSecret(idToken: stateManager!.idToken!, deviceSecret: stateManager!.authState.lastTokenResponse!.additionalParameters!["device_secret"]! as! String)
     }
     
     

@@ -1,12 +1,9 @@
 PODS:
-  - OktaOidc (3.7.0):
-    - OktaOidc/AppAuth (= 3.7.0)
-    - OktaOidc/Okta (= 3.7.0)
-  - OktaOidc/AppAuth (3.7.0)
-  - OktaOidc/Okta (3.7.0):
-    - OktaOidc/AppAuth
-    - OktaOidc/Okta/Classes (= 3.7.0)
-  - OktaOidc/Okta/Classes (3.7.0):
+  - OktaOidc (3.10.6):
+    - OktaOidc/AppAuth (= 3.10.6)
+    - OktaOidc/Okta (= 3.10.6)
+  - OktaOidc/AppAuth (3.10.6)
+  - OktaOidc/Okta (3.10.6):
     - OktaOidc/AppAuth
 
 DEPENDENCIES:
@@ -17,8 +14,8 @@ SPEC REPOS:
     - OktaOidc
 
 SPEC CHECKSUMS:
-  OktaOidc: 646773483d04de414575fd7845345fb151c0c388
+  OktaOidc: d6c5ce0be950f76360c15f67cf39973f4738abbf
 
-PODFILE CHECKSUM: 8e4e98e7360e72bdcb6271b97e783f6481b1b8ad
+PODFILE CHECKSUM: 758228b8e4abc004d653f4ed9d773db5ee23f72e
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.10.1
