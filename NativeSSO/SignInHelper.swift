@@ -18,7 +18,8 @@ class SignInHelper: NSObject {
     static let keychainTag = "device_secret"
     static var stateManager : OktaOidcStateManager?
     
-    static func doLogin(oktaOidc: OktaOidc, browserOidcLogin: @escaping ()->()) {
+    static func doLogin(oktaOidc: OktaOidc, browserOidcLogin: @escaping ()->(),
+                        successHandler: @escaping (_ stateManager: OktaOidcStateManager?)->()) {
         // we are here when we are not logged in
         // first try to find device_secret and exchange a token
         let (idToken, deviceSecret) = queryForDeviceSecret()
@@ -70,9 +71,12 @@ class SignInHelper: NSObject {
             // tokenResponse has the real tokens that we need to save
             authState.update(with: tokenResponse, error: error)
             
-            stateManager = OktaOidcStateManager(authState: authState)
+            let sm = OktaOidcStateManager(authState: authState)
             // Store instance of stateManager into the local iOS keychain
-            stateManager!.writeToSecureStorage()
+            sm.writeToSecureStorage()
+            stateManager = sm
+            
+            successHandler(stateManager)
         }
     }
 

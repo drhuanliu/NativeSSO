@@ -7,6 +7,7 @@
 
 import UIKit
 import OktaOidc
+import JWTDecode
 
 class ViewController: UIViewController {
 
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
 
             SignInHelper.stateManager = OktaOidcStateManager.readFromSecureStorage(for: configuration)
 
-            displayUsername()
+            displayUsername(SignInHelper.stateManager)
         }
         catch {
             print(error)
@@ -38,18 +39,20 @@ class ViewController: UIViewController {
         
     }
     
-    func displayUsername() {
-        SignInHelper.stateManager?.getUser { response, error in
-            if let error = error {
-                // Error
-                return
-            }
-
-            // response is Dictionary - [String:Any]
-            let firsname = response?["firstName"] as? String
-            let sub = response?["sub"] as? String
-            self.label.text = (firsname ?? "") + "\n" + (sub ?? "")
+    func displayUsername(_ stateManager: OktaOidcStateManager?) {
+        
+        guard let accessToken = stateManager?.authState.lastTokenResponse?.accessToken else {
+            self.label.text = ""
+            return
         }
+        
+        do {
+            let jwt = try decode(jwt: accessToken)
+            
+            self.label.text = "Welcome\n\n" + (jwt.body["firstName"] as! String? ?? "") + "\n" + (jwt.body["sub"] as! String? ?? "")
+            print(jwt.body)
+        }
+        catch {}
     }
 
     func refreshToken() {
@@ -62,32 +65,36 @@ class ViewController: UIViewController {
         })
 
     }
-
+    
+    func loginCallback(stateManager: OktaOidcStateManager?, error: Error?) {
+        SignInHelper.oktaOidcCallback(stateManager, error)
+        displayUsername(stateManager)
+    }
+    // plain browser login
     func iosOidcBrowserLogin() {
-        oktaOidc.signInWithBrowser(from: self, callback: SignInHelper.oktaOidcCallback)
+        oktaOidc.signInWithBrowser(from: self, callback: loginCallback)
     }
     
     @IBAction func login(_ sender: Any) {
-        SignInHelper.doLogin(oktaOidc: oktaOidc, browserOidcLogin: iosOidcBrowserLogin )
-        
-        displayUsername()
+        SignInHelper.doLogin(oktaOidc: oktaOidc, browserOidcLogin: iosOidcBrowserLogin, successHandler: displayUsername )
     }
     
     @IBAction func logout(_ sender: Any) {
+        do {
+            try SignInHelper.stateManager?.removeFromSecureStorage()
+        }
+        catch {}
+        
+        self.label.text = ""
+
         if let sm = SignInHelper.stateManager {
             oktaOidc.signOutOfOkta(sm, from: self) { error in
                 if let error = error {
                     // Handle error
                     return
                 }
-                
-                do {
-                    try SignInHelper.stateManager?.removeFromSecureStorage()
-                }
-                catch {}
             }
         }
-        SignInHelper.removeDeviceSecret()
     }
 
         
